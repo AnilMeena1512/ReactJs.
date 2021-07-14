@@ -1,23 +1,18 @@
-import React from "react"
+import React,{useState} from "react"
 import "./style.css"
-import Button from "./Button"
 
-const Fruits=()=>{
+const App=()=>{
+    let [score,setScore]=useState(0)
+
     return(
         <div>
-            <h1 style={{textAlign:"center"}}>Namaste React</h1>
-            <h2 id="namaskar">Namaskar</h2>
-            <h3>
-            <p>welcome to the world of <em id="em"><strong>ReactJs</strong></em> Here we will start our 
-            journy of learning from basics to advanced, and the final you will be master in <em id="em"><strong>ReactJs.</strong></em> </p>
-                </h3>
-            <Button ButtonText="Apple"/>
-            <Button ButtonText="Banana"/>
-            <Button ButtonText="Orange"/>
-            <Button ButtonText="Guava"/>
-            <Button ButtonText="mango"/>
+            <h1>Hello this is my counter application app </h1>
+            <h2> The value of score is {score} </h2>
+            <button id="B1" onClick={()=>(score<25) ? setScore(score+1) : ""}> Increment </button>
+            <button id="B2" onClick={()=>(score>0) ? setScore(score-1) : ""}> Decrement </button>
+            <button id="B3" onClick={()=>{setScore(0)}}> Reset </button>
         </div>
     )
 }
 
-export default Fruits
+export default App

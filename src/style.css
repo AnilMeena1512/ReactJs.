@@ -1,20 +1,28 @@
-body{
-    background-color: lightblue;
-    color: royalblue;
-}
-#namaskar{
-    color:salmon;
+#B1{
+    background-color: green;
+    color:black;
+    font-style: italic;
 }
 
-.button{
-    margin-right: 5px;
+#B2{
+    background-color:red;
+    color:blue;
     font-style: italic;
-    color:maroon;
-    background-color: yellow;
 }
-h3{
-    color:mediumseagreen;
+
+#B3{
+    background-color:whitesmoke;
+    color:crimson;
+    font-style: italic;
 }
-#em{
-    color:midnightblue;
+h1{
+    color: darkblue;
+}
+
+h2{
+    color:darkmagenta;
+}
+
+button{
+    margin-right: 5px;
 }
